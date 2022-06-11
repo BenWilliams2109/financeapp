@@ -1,67 +1,47 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { VscGraphScatter } from "react-icons/vsc";
+import Contact from "../pages/Contact/Contact";
+import Model from "../pages/Model/Model";
+import Home from "../pages/Home/Home";
+import "./Navbar.css";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
   return (
-    <nav
-      className="navbar is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div className="container">
-        <div className="navbar-brand">
-          <a
-            role="button"
-            className={`navbar-burger burger ${isOpen && "is-active"}`}
-            aria-label="menu"
-            aria-expanded="false"
-            onClick={() => setOpen(!isOpen)}
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div className={`navbar-menu ${isOpen && "is-active"}`}>
-          <div className="navbar-start">
-            <NavLink 
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/"
-              exact
-            >
-              Home
-            </NavLink>
-
-            <NavLink
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/about"
-            >
-              About
-            </NavLink>
-
-            <NavLink
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/profile"
-            >
-              Profile
-            </NavLink>
+    <Router>
+      <div>
+        <nav>
+          <div className="navbar-container">
+            <ul id="navbar-left">
+              <li>
+                <div className="home-icon">
+                  <div className="home-icon-element">
+                    <VscGraphScatter />
+                  </div>
+                  <div className="home-icon-element">
+                    <Link to="/">B.W. Finance</Link>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul className="navbar-right">
+              <li>
+                <Link to="/model">Model</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
           </div>
+        </nav>
 
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-white">Log in</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Routes>
+          <Route path="/model" element={<Model />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
-    </nav>
+    </Router>
   );
 };
 

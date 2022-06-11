@@ -1,8 +1,9 @@
 import React from "react";
+import "./Model.css";
 
-const About = () => (
-  <div>
-    <h1 className="title is-1">This is the About Page</h1>
+const Model = () => (
+  <div className="page-content">
+    <h1 className="title">This is the Model Page</h1>
     <p>
       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
       inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus
@@ -12,4 +13,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default Model;
