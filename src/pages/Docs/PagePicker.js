@@ -1,12 +1,5 @@
-import "./Docs.css";
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack";
-import { Amplify, Storage } from "aws-amplify";
-import config from "../../aws-exports";
-import Pdf from "./docs src/Market Movements with Machine Learning.pdf";
-
-Amplify.configure(config);
-Storage.configure({ track: true });
 
 export default function PagePicker(pdf) {
   const [numPages, setNumPages] = useState(null);
@@ -18,7 +11,7 @@ export default function PagePicker(pdf) {
 
   return (
     <div>
-      <Document file={Pdf} onLoadSuccess={onDocumentLoadSuccess}>
+      <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>
       <p>

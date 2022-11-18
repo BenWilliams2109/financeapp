@@ -1,0 +1,29 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify20891b5d810b4-staging-194654-authRole",
+      "UnauthRoleArn": "arn:aws:iam::539210847866:role/amplify-amplify20891b5d810b4-staging-194654-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::539210847866:role/amplify-amplify20891b5d810b4-staging-194654-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify20891b5d810b4-staging-194654-deployment",
+      "UnauthRoleName": "amplify-amplify20891b5d810b4-staging-194654-unauthRole",
+      "StackName": "amplify-amplify20891b5d810b4-staging-194654",
+      "StackId": "arn:aws:cloudformation:us-east-1:539210847866:stack/amplify-amplify20891b5d810b4-staging-194654/40918360-e508-11ec-a661-0ed7a7d7bfd3",
+      "AmplifyAppId": "d53hf77b55z7"
+    },
+    "categories": {
+      "auth": {
+        "financeapp3bb37e9b": {}
+      },
+      "function": {
+        "S3Trigger5e65980e": {
+          "deploymentBucketName": "amplify-amplify20891b5d810b4-staging-194654-deployment",
+          "s3Key": "amplify-builds/S3Trigger5e65980e-69495666773532386244-build.zip"
+        }
+      },
+      "storage": {
+        "pyalgofiles": {}
+      }
+    }
+  }
+}

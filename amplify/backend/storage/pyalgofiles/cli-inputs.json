@@ -1,0 +1,14 @@
+{
+  "resourceName": "pyalgofiles",
+  "policyUUID": "29b2a589",
+  "bucketName": "financeapp79664dce740f43748f16171007f39342",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "S3Trigger5e65980e",
+  "groupAccess": {}
+}
