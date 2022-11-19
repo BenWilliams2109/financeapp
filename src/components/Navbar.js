@@ -4,7 +4,7 @@ import { VscGraphScatter } from "react-icons/vsc";
 import Admin from "../pages/Admin/Admin";
 import Model from "../pages/Model/Model";
 import Home from "../pages/Home/Home";
-import Docs from "../pages/Docs/Docs";
+import App from "../pages/Docs/Docs";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <Link to="/docs">Docs</Link>
               </li>
               <li>
-                <Link to="/admin">Contact</Link>
+                <Link to="/admin">Admin</Link>
               </li>
             </ul>
           </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <Routes>
           <Route path="/model" element={<Model />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/docs" element={<Docs />} />
+          <Route path="/docs" element={<App />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
