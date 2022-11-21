@@ -17,7 +17,10 @@ function App() {
     s3Objects.results.map(async (item) => {
       let downloadLink = await generateDownloadLinks(item.key);
       console.log(downloadLink);
-      setS3DownloadLinks((s3DownloadLinks) => [s3DownloadLinks, downloadLink]);
+      setS3DownloadLinks((s3DownloadLinks) => [
+        ...s3DownloadLinks,
+        downloadLink,
+      ]);
     });
   }
 
