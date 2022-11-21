@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul id="navbar-left">
               <li>
                 <div className="nav-link">
-                  <Link to="/">B.W. Finance</Link>
+                  <Link to="/">B.W. Data</Link>
                 </div>
               </li>
             </ul>
@@ -27,16 +27,16 @@ const Navbar = () => {
               <li className="nav-link">
                 <Link to="/docs">Docs</Link>
               </li>
-              <li className="nav-link">
+              {/* <li className="nav-link">
                 <Link to="/admin">Admin</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
 
         <Routes>
           <Route path="/model" element={<Model />} />
-          <Route path="/admin" element={<Admin />} />
+          {/* <Route path="/admin" element={<Admin />} /> ARCHIVED TEMPORARILY*/}
           <Route path="/docs" element={<App />} />
           <Route path="/" element={<Home />} />
         </Routes>

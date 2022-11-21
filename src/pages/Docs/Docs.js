@@ -24,14 +24,6 @@ function App() {
       });
   }
 
-  // async function downloadBlob(blob, filename) {
-  //   const url = URL.createObjectURL(blob);
-  //   const a = document.createElement("a");
-  //   a.href = url;
-  //   a.download = filename || "download";
-  //   return a;
-  // }
-
   async function generateDownloadLinks(fileKey) {
     const result = await Storage.get(fileKey, { download: true });
     return URL.createObjectURL(result.Body);
@@ -43,8 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <p>List of files:</p>
+      <h1 className="title">List of files:</h1>
       {s3DownloadLinks.map((item, index) => {
         return (
           <div key={index}>

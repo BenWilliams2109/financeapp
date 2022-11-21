@@ -16,9 +16,9 @@ Amplify.configure(config);
 
 function App({ signOut }) {
   return (
-    <View className="App">
+    <div>
       <Button onClick={signOut}>Sign Out</Button>
-    </View>
+    </div>
   );
 }
 
