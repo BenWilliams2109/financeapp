@@ -10,13 +10,13 @@ Amplify.configure(config);
 Storage.configure({ track: true });
 
 function App() {
-  const [s3DownloadLinks, setS3DownloadLinks] = useState([]);
+  const [s3DownloadLinks, setS3DownloadLinks] = useState([""]);
 
   async function listObjectsFromS3() {
     const s3Objects = await Storage.list("");
+    console.log(s3Objects);
     s3Objects.results.map(async (item) => {
       let downloadLink = await generateDownloadLinks(item.key);
-      console.log(downloadLink);
       setS3DownloadLinks((s3DownloadLinks) => [
         ...s3DownloadLinks,
         downloadLink,
@@ -34,6 +34,7 @@ function App() {
 
   async function generateDownloadLinks(fileKey) {
     const result = await Storage.get(fileKey, { download: true });
+    console.log(result);
     return downloadBlob(result.Body, "filename");
   }
 
@@ -46,11 +47,13 @@ function App() {
       <h1>Hello</h1>
       <p>List of files:</p>
       {s3DownloadLinks.map((item, index) => {
-        <div key={index}>
-          <a href={item} target="_blank" download="">
-            Link {index}
-          </a>
-        </div>;
+        return (
+          <div key={index}>
+            <a href={item} target="_blank" download="">
+              Link {index}
+            </a>
+          </div>
+        );
       })}
     </div>
   );
