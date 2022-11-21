@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Model.css";
+import { Amplify, Storage } from "aws-amplify";
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+import config from "../../aws-exports";
+import awsExports from "../../aws-exports";
 
-const Model = () => (
-  <div className="page-content">
-    <h1 className="title">This is the Model Page</h1>
-    <p>
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-      inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus
-      et ultrices posuere cubilia curae; Duis consequat nulla ac ex consequat,
-      in efficitur arcu congue. Nam fermentum commodo egestas.
-    </p>
-  </div>
-);
+function Model() {
+  Storage.list("") // for listing ALL files without prefix, pass '' instead
+    .then((result) => console.log(result))
+    .catch((err) => console.log(err));
+
+  return (
+    <div>
+      <h1>This is the Model page</h1>
+    </div>
+  );
+}
 
 export default Model;
