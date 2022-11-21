@@ -27,16 +27,6 @@ ul #navbar-right {
   align-items: flex-end;
 }
 
-.home-icon-element {
-  color: red;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
-}
-
-.home-icon-element {
-}
-
-a {
+.nav-link a {
   color: #efefef !important;
 }

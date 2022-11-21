@@ -15,24 +15,19 @@ const Navbar = () => {
           <div className="navbar-container">
             <ul id="navbar-left">
               <li>
-                <div className="home-icon">
-                  <div className="home-icon-element">
-                    <VscGraphScatter />
-                  </div>
-                  <div className="home-icon-element">
-                    <Link to="/">B.W. Finance</Link>
-                  </div>
+                <div className="nav-link">
+                  <Link to="/">B.W. Finance</Link>
                 </div>
               </li>
             </ul>
             <ul className="navbar-right">
-              <li>
+              <li className="nav-link">
                 <Link to="/model">Model</Link>
               </li>
-              <li>
+              <li className="nav-link">
                 <Link to="/docs">Docs</Link>
               </li>
-              <li>
+              <li className="nav-link">
                 <Link to="/admin">Admin</Link>
               </li>
             </ul>
