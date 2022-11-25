@@ -27,16 +27,12 @@ const Navbar = () => {
               <li className="nav-link">
                 <Link to="/docs">Docs</Link>
               </li>
-              {/* <li className="nav-link">
-                <Link to="/admin">Admin</Link>
-              </li> */}
             </ul>
           </div>
         </nav>
 
         <Routes>
           <Route path="/model" element={<Model />} />
-          {/* <Route path="/admin" element={<Admin />} /> ARCHIVED TEMPORARILY*/}
           <Route path="/docs" element={<App />} />
           <Route path="/" element={<Home />} />
         </Routes>

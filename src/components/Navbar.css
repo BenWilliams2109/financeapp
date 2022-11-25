@@ -1,5 +1,5 @@
 nav {
-  background-color: #242424;
+  background-color: #ffff;
   list-style-type: none;
   text-align: center;
   font-weight: 700;
@@ -11,7 +11,7 @@ nav {
 .navbar-container {
   margin-right: 20px;
   margin-left: 20px;
-  border-bottom: 1.5px solid #242424;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,7 +19,7 @@ nav {
 
 .navbar-container li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 170%;
   padding: 20px;
 }
 
@@ -28,5 +28,5 @@ ul #navbar-right {
 }
 
 .nav-link a {
-  color: #efefef !important;
+  color: #001eff !important;
 }

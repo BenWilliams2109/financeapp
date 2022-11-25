@@ -1,0 +1,38 @@
+.foot {
+  background-color: #242424;
+  list-style-type: none;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 40px;
+  text-align: left;
+  color: #ffff;
+}
+
+.footer-container {
+  margin-right: 20px;
+  margin-left: 40px;
+  padding: 20px 0px 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container li {
+  font-size: 80%;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.foot-item {
+  color: #ffff !important;
+}
+
+.foot-item a {
+  color: #ffff !important;
+}
+
+.foot-item a:hover {
+  color: #ffff;
+}
