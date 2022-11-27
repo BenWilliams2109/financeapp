@@ -37,6 +37,7 @@ const Table = (props) => {
       {
         Header: "Open",
         accessor: "open",
+        Cell: (props) => <a href={String(props.value)}>Link</a>,
       },
     ],
     []
