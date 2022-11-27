@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { VscGraphScatter } from "react-icons/vsc";
-import Admin from "../pages/Admin/Admin";
+// import { VscGraphScatter } from "react-icons/vsc";
+// import Admin from "../pages/Admin/Admin";
 import Model from "../pages/Model/Model";
 import Home from "../pages/Home/Home";
-import App from "../pages/Docs/Docs";
+import Docs from "../pages/Docs/Docs";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <Routes>
           <Route path="/model" element={<Model />} />
-          <Route path="/docs" element={<App />} />
+          <Route path="/docs" element={<Docs />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
