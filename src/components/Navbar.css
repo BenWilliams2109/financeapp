@@ -6,6 +6,7 @@ nav {
   margin: 0;
   padding-right: 40px;
   text-align: right;
+  min-height: 6vh;
 }
 
 .navbar-container {

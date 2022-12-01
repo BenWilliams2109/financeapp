@@ -21,9 +21,9 @@ const Navbar = () => {
               </li>
             </ul>
             <ul className="navbar-right">
-              <li className="nav-link">
+              {/* <li className="nav-link">
                 <Link to="/model">Model</Link>
-              </li>
+              </li> */}
               <li className="nav-link">
                 <Link to="/docs">Docs</Link>
               </li>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </nav>
 
         <Routes>
-          <Route path="/model" element={<Model />} />
+          {/* <Route path="/model" element={<Model />} /> */}
           <Route path="/docs" element={<Docs />} />
           <Route path="/" element={<Home />} />
         </Routes>

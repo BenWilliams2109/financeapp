@@ -12,8 +12,8 @@ const Home = () => (
         <div className="left-col-1">
           <div className="title-1">Hi, I'm Ben</div>
           <div className="title-1-content">
-            I am a highly ambitious and confident final year Mathematics student
-            at Loughborough University.
+            I am an ambitious final year Mathematics student at Loughborough
+            University.
           </div>
           <div className="title-1-content">
             I enjoy learning about data analytics, and I built this website to
@@ -22,24 +22,63 @@ const Home = () => (
         </div>
         <div className="right-col-1">
           <div className="right-col-1-image">
-            <img src={dataAnalytics} alt="caveman-coder" />
+            <img src={dataAnalytics} alt="dataAnalytics" />
           </div>
         </div>
       </div>
     </div>
     {/* This is the second row */}
-
-    <div className="row-purple-1">
+    <div className="row-2-purple">
+      <div className="row-2-university">University Education</div>
       <div className="content-container-row-2">
-        <div className="left-col-2">
-          My name is Ben Williams. I am a highly ambitious and confident final
-          year Mathematics student at Loughborough University.
+        <div className="row-2-col">
+          <div className="row-2-col-title">Year 1</div>
+          <div className="row-2-col-content">
+            <div className="row-2-col-grade">78% Overall</div>
+          </div>
+          <div className="row-2-col-footer">
+            <div>Probability and Statistics</div>
+            <div>Computing and Numerical Methods</div>
+            <div>Linear Algebra 1&2</div>
+          </div>
         </div>
-        <div className="right-col-2"></div>
+        <div className="row-2-col">
+          <div className="row-2-col-title">Year 2</div>
+          <div className="row-2-col-content">
+            <div className="row-2-col-grade">76.1% Overall</div>
+          </div>
+          <div className="row-2-col-footer">
+            <div>Probability Theory</div>
+            <div>Advanced Numerical Methods</div>
+            <div>Communicating Mathematics</div>
+          </div>
+        </div>
+        <div className="row-2-col">
+          <div className="row-2-col-title">Placement</div>
+          <div className="row-2-col-content">
+            <div className="row-2-col-grade">A (Outstanding)</div>
+          </div>
+          <div className="row-2-col-footer">
+            <div>Interim Placement Report</div>
+            <div>Final Placement Report</div>
+          </div>
+        </div>
+        <div className="row-2-col">
+          <div className="row-2-col-title">Year 4</div>
+          <div className="row-2-col-content">
+            <div className="row-2-col-grade">Expected 1st</div>
+          </div>
+          <div className="row-2-col-footer">
+            <div>Operational Research</div>
+            <div>Statistics for Large Data</div>
+            <div>Computational Methods in Finance</div>
+          </div>
+        </div>
       </div>
     </div>
+
     {/* This is the third row */}
-    <div className="row-white-2">
+    <div className="row-3-white">
       <div className="content-container-row-3">
         <div className="left-col-3">
           <div className="left-col-3-image">
@@ -63,6 +102,8 @@ const Home = () => (
         </div>
       </div>
     </div>
+    {/* This is the fourth row */}
+    <div className="row-2-purple"></div>
   </div>
 );
 
