@@ -68,7 +68,7 @@ const Table = (props) => {
                   <th
                     {...column.getHeaderProps()}
                     style={{
-                      borderBottom: "solid 3px red",
+                      borderBottom: "solid 3px #2842a2",
                       color: "black",
                     }}
                   >
