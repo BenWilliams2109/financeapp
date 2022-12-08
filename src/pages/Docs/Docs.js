@@ -6,6 +6,7 @@ import config from "../../aws-exports";
 import Dropdown from "../../components/Dropdown";
 import { ComponentPropsToStylePropsMap } from "@aws-amplify/ui-react";
 import Table from "./table";
+import { Loader } from "@aws-amplify/ui-react";
 
 Amplify.configure(config);
 Storage.configure({ track: true });
@@ -13,8 +14,10 @@ Storage.configure({ track: true });
 function Docs() {
   //This is all the code that deals with fetching from S3
   const [s3DownloadLinks, setS3DownloadLinks] = useState([0]);
+  const [fetched, setFetched] = useState(true);
 
   async function listObjectsFromS3(Project) {
+    setFetched(false);
     setS3DownloadLinks((s3DownloadLinks) => []);
 
     const s3Objects = await Storage.list(String(Project) + "/", {
@@ -30,6 +33,7 @@ function Docs() {
           [item.key, 0, item.lastModified, item.size, downloadLink],
         ]);
       });
+    setFetched(true);
   }
 
   async function generateDownloadLinks(fileKey) {
@@ -54,6 +58,7 @@ function Docs() {
     <div className="App">
       <div>
         <Dropdown
+          className="dropdown"
           trigger={<button>Select Project</button>}
           menu={[
             <button onClick={handleMenuOne}>
@@ -63,7 +68,11 @@ function Docs() {
             <button onClick={handleMenuThree}>Academic Work</button>,
           ]}
         />
+
+        {!fetched && <Loader className="my-loader" variation="linear" />}
+
         <Table
+          className="contents-table"
           data={s3DownloadLinks}
           col_labels={[
             "Doc Name",
@@ -73,7 +82,6 @@ function Docs() {
             "Open",
           ]}
         />
-        <div></div>
       </div>
     </div>
   );

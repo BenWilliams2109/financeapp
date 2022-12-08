@@ -6,3 +6,16 @@
   min-height: 94vh;
   padding: 50px;
 }
+
+.dropdown {
+  margin-bottom: 50px;
+}
+
+.contents-table {
+  position: relative;
+}
+
+.my-loader {
+  width: 5rem;
+  height: 5rem;
+}

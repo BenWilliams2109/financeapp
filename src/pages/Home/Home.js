@@ -76,7 +76,6 @@ const Home = () => (
         </div>
       </div>
     </div>
-
     {/* This is the third row */}
     <div className="row-3-white">
       <div className="content-container-row-3">
@@ -86,8 +85,9 @@ const Home = () => (
           </div>
           <div className="col-3-title">IT Business Analyst</div>
           <div className="col-3-text">
-            I worked as an IT Business Analyst Industrial Placement Student at
-            MSD between July 2021 and June 2022.
+            1 year Industrial Placement at MSD between July 2021 and June 2022.
+            Agile development of new and existing IT systems across a variety of
+            sectors within the business.
           </div>
         </div>
         <div className="right-col-3">
@@ -96,8 +96,9 @@ const Home = () => (
           </div>
           <div className="col-3-title">Strategy Analyst</div>
           <div className="col-3-text">
-            I worked as a Strategy Analyst Summer Intern at Capital One in the
-            Upmarket Customer Acquisitions team.
+            3 month summer internship between June 2022 - Sep 2022. Sole
+            ownership of project investigating customer acquisition
+            optimisations using SQL, Python and Excel.
           </div>
         </div>
       </div>
