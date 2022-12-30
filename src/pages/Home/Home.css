@@ -80,8 +80,7 @@
 
 .content-container-row-2 {
   display: flex;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: auto;
   flex-direction: row;
   max-width: 2000px;
   justify-content: space-evenly;

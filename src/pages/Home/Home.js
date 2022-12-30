@@ -54,7 +54,7 @@ const Home = () => (
           </div>
         </div>
         <div className="row-2-col">
-          <div className="row-2-col-title">Placement</div>
+          <div className="row-2-col-title">Diploma in Professional Studies</div>
           <div className="row-2-col-content">
             <div className="row-2-col-grade">A (Outstanding)</div>
           </div>

@@ -47,11 +47,15 @@ function Docs() {
   };
 
   const handleMenuTwo = () => {
-    listObjectsFromS3("Other-Projects");
+    listObjectsFromS3("R-for-Data-Science");
   };
 
   const handleMenuThree = () => {
     listObjectsFromS3("Academic-Work");
+  };
+
+  const handleMenuFour = () => {
+    listObjectsFromS3("Other-Projects");
   };
 
   return (
@@ -64,8 +68,9 @@ function Docs() {
             <button onClick={handleMenuOne}>
               Algorithmic Trading for Python
             </button>,
-            <button onClick={handleMenuTwo}>Other Projects</button>,
+            <button onClick={handleMenuTwo}>R for Data Science</button>,
             <button onClick={handleMenuThree}>Academic Work</button>,
+            <button onClick={handleMenuFour}>Other Projects</button>,
           ]}
         />
 
