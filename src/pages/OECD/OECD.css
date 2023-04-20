@@ -1,0 +1,12 @@
+.ProjectPicker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 0px 50px 0px;
+}
+
+.ProjectContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px 50px 0px;
+}

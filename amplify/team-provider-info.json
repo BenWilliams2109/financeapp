@@ -16,10 +16,7 @@
         "financeapp3bb37e9b": {}
       },
       "function": {
-        "S3Trigger5e65980e": {
-          "deploymentBucketName": "amplify-amplify20891b5d810b4-staging-194654-deployment",
-          "s3Key": "amplify-builds/S3Trigger5e65980e-69495666773532386244-build.zip"
-        }
+        "S3Trigger5e65980e": {}
       },
       "storage": {
         "pyalgofiles": {}

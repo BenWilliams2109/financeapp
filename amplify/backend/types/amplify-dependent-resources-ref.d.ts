@@ -1,27 +1,27 @@
 export type AmplifyDependentResourcesAttributes = {
-    "auth": {
-        "financeapp3bb37e9b": {
-            "IdentityPoolId": "string",
-            "IdentityPoolName": "string",
-            "UserPoolId": "string",
-            "UserPoolArn": "string",
-            "UserPoolName": "string",
-            "AppClientIDWeb": "string",
-            "AppClientID": "string"
-        }
-    },
-    "function": {
-        "S3Trigger5e65980e": {
-            "Name": "string",
-            "Arn": "string",
-            "Region": "string",
-            "LambdaExecutionRole": "string"
-        }
-    },
-    "storage": {
-        "pyalgofiles": {
-            "BucketName": "string",
-            "Region": "string"
-        }
+  "auth": {
+    "financeapp3bb37e9b": {
+      "AppClientID": "string",
+      "AppClientIDWeb": "string",
+      "IdentityPoolId": "string",
+      "IdentityPoolName": "string",
+      "UserPoolArn": "string",
+      "UserPoolId": "string",
+      "UserPoolName": "string"
     }
+  },
+  "function": {
+    "S3Trigger5e65980e": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "Name": "string",
+      "Region": "string"
+    }
+  },
+  "storage": {
+    "pyalgofiles": {
+      "BucketName": "string",
+      "Region": "string"
+    }
+  }
 }

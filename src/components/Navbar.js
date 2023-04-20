@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Model from "../pages/Model/Model";
 import Home from "../pages/Home/Home";
 import Docs from "../pages/Docs/Docs";
+import OECD from "../pages/OECD/OECD";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -25,6 +26,9 @@ const Navbar = () => {
                 <Link to="/model">Model</Link>
               </li> */}
               <li className="nav-link">
+                <Link to="/OECD-Project">OECD Project</Link>
+              </li>
+              <li className="nav-link">
                 <Link to="/docs">Docs</Link>
               </li>
             </ul>
@@ -34,6 +38,7 @@ const Navbar = () => {
         <Routes>
           {/* <Route path="/model" element={<Model />} /> */}
           <Route path="/docs" element={<Docs />} />
+          <Route path="/OECD-Project" element={<OECD />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>

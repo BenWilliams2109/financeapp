@@ -76,17 +76,7 @@ function Docs() {
 
         {!fetched && <Loader className="my-loader" variation="linear" />}
 
-        <Table
-          className="contents-table"
-          data={s3DownloadLinks}
-          col_labels={[
-            "Doc Name",
-            "Doc Type",
-            "Last Modified",
-            "Doc Size",
-            "Open",
-          ]}
-        />
+        <Table className="contents-table" data={s3DownloadLinks} />
       </div>
     </div>
   );
