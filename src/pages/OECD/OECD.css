@@ -5,8 +5,18 @@
   margin: 50px 0px 50px 0px;
 }
 
-.ProjectContainer {
+.projectContainer {
   display: flex;
   justify-content: space-around;
   padding: 50px 0px 50px 0px;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px 50px 0px;
+}
+
+.mainChart {
+  display: flex;
 }
