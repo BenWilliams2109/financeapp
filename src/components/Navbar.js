@@ -25,9 +25,9 @@ const Navbar = () => {
               {/* <li className="nav-link">
                 <Link to="/model">Model</Link>
               </li> */}
-              <li className="nav-link">
+              {/* <li className="nav-link">
                 <Link to="/OECD-Project">OECD Project</Link>
-              </li>
+              </li> */}
               <li className="nav-link">
                 <Link to="/docs">Docs</Link>
               </li>
@@ -38,7 +38,7 @@ const Navbar = () => {
         <Routes>
           {/* <Route path="/model" element={<Model />} /> */}
           <Route path="/docs" element={<Docs />} />
-          <Route path="/OECD-Project" element={<OECD />} />
+          {/* <Route path="/OECD-Project" element={<OECD />} /> */}
           <Route path="/" element={<Home />} />
         </Routes>
       </div>

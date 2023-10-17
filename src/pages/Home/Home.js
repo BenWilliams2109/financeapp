@@ -12,12 +12,12 @@ const Home = () => (
         <div className="left-col-1">
           <div className="title-1">Hi, I'm Ben</div>
           <div className="title-1-content">
-            I am an ambitious final year Mathematics student at Loughborough
-            University.
+            I am an ambitious MSc Data Science student at University College
+            London.
           </div>
           <div className="title-1-content">
-            I enjoy learning about data analytics, and I built this website to
-            showcase some of my work.
+            I enjoy learning about various applications of programming and
+            maths, and I built this website to showcase my work.
           </div>
         </div>
         <div className="right-col-1">
@@ -30,6 +30,9 @@ const Home = () => (
     {/* This is the second row */}
     <div className="row-2-purple">
       <div className="row-2-university">University Education</div>
+      <div className="university-Lboro">
+        Bsc Mathematics, Loughborough University
+      </div>
       <div className="content-container-row-2">
         <div className="row-2-col">
           <div className="row-2-col-title">Year 1</div>
@@ -66,12 +69,45 @@ const Home = () => (
         <div className="row-2-col">
           <div className="row-2-col-title">Year 4</div>
           <div className="row-2-col-content">
-            <div className="row-2-col-grade">Expected 1st</div>
+            <div className="row-2-col-grade">First Class Honours</div>
           </div>
           <div className="row-2-col-footer">
             <div>Operational Research</div>
             <div>Statistics for Large Data</div>
             <div>Computational Methods in Finance</div>
+          </div>
+        </div>
+      </div>
+      <div className="university-UCL">
+        MSc Data Science, University College London
+      </div>
+
+      <div className="UCL-2-col">
+        <div className="row-2-col-title">Modules</div>
+        <div className="UCL-container">
+          <div className="UCL-box">
+            <div className="UCL-modules-header">Semester 1</div>
+            <div className="UCL-module">
+              <div>Introduction to Machine Learning</div>
+              <div>Introduction to Statistical Data Science</div>
+              <div>Statistical Design of Investigations</div>
+              <div>Graphical Models</div>
+            </div>
+          </div>
+          <div className="UCL-box">
+            <div className="UCL-modules-header">Semester 2</div>
+            <div className="UCL-module">
+              <div>Applied Bayesian Methods</div>
+              <div>Inference at Scale</div>
+              <div>Information Retrieval and Data Mining</div>
+              <div>Statistical Computing</div>
+            </div>
+          </div>
+          <div className="UCL-box">
+            <div className="UCL-modules-header">Semester 3</div>
+            <div className="UCL-module">
+              <div>Research Project</div>
+            </div>
           </div>
         </div>
       </div>
